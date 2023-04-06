@@ -193,7 +193,7 @@ class _ProductFormState extends State<ProductForm> {
             spacing: 5,
             children: [
               ..._categories.map((category) => InputChip(
-                    label: Text("Category ${category['nama']}"),
+                    label: Text("${category['nama']}"),
                     selected:
                         _categoriesInput.contains(category['id_kategori']),
                     selectedColor: const Color.fromRGBO(103, 148, 142, 1),
